@@ -1,0 +1,22 @@
+<div class="container my-3" id="imageUpload">
+<form action="http://localhost:3200/addImage" method="POST" class="row g-3 needs-validation" enctype="multipart/form-data">
+  
+    <div class="col-md-6">
+      <label for="imageName" class="form-label">Image Name</label>
+      <input type="text" class="form-control" id="imagename" name="imagename" placeholder="Write Image Name..." required >
+      <div class="valid-feedback">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="imageTag" class="form-label">Image Tag</label>
+      <input type="text" class="form-control" id="imagetag" name="imagetag" placeholder="Write Image Tag..." required >
+    </div>
+    <div class="mb-3">
+        <label for="imageUpload" class="form-label">Image Selected</label>
+        <input type="file"  class="form-control" id="imageUpload" required name="image" accept="image/*" >
+      </div>     
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+  </form>
+</div>

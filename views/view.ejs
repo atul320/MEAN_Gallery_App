@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image gallery</title>
+</head>
+<body>
+    <div class="container" id="maincontainer">
+        <form action="/addImage" method="POST" enctype="multipart/form-data">
+            <input type="text" name="imagename" id="imagename"><br>
+            <input type="text" name="imagetag" id="imagetag"><br>
+            <input type="file" name="image" accept='image/*' ><br>
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+</body>
+</html>
