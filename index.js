@@ -29,10 +29,10 @@ app.get("/show", (req, res) => {
 
 // Database connection
 const db = mysql.createConnection({
-  host: "172.16.15.165",
-  user: "admin",
-  password: "Kalkine@123",
-  database: "atul.bhardwaj",
+  host: "_hostport_",
+  user: "_username_",
+  password: "_password_",
+  database: "_databaseName_",
 });
 
 db.connect(function (err) {
